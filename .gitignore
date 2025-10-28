@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+
+# Model files (too large for git)
+models/*.pt
+models/*.pkl
+*.pth
+*.ckpt
+
+# StyleGAN2 (cloned separately)
+stylegan2-ada-pytorch/
+
+# Outputs
+outputs/
+*.png
+*.jpg
+*.jpeg
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp

@@ -1,0 +1,13 @@
+Gender: woman, man
+Age: young, old, elderly, middle-aged
+Hair Color: black, brown, blonde, blond, red, gray, grey, white
+Hair Style: wavy, straight, curly, bangs, receding hairline, bald
+Face Features: oval face, high cheekbones, chubby, chubby face, double chin, double chined
+Facial Hair: 5 o'clock shadow, goatee, sideburns, mustache, moustache, beard
+Nose: big nose, pointy nose, big pointy nose
+Lips: big lips
+Eyes: narrow eyes, blue eyes, brown eyes, green eyes
+Eyebrows: arched eyebrows, bushy eyebrows
+Mouth: slightly open mouth
+Appearance: attractive, smiling, rosy cheeks, heavy makeup, pale skin, looks young
+Accessories: earrings, necklace, lipstick, necktie, glasses, hat, wearing earrings, wearing necklace, wearing lipstick, wearing necktie, wearing a hat, wearing glasses
