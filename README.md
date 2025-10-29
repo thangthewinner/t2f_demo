@@ -42,3 +42,5 @@ python app.py
 Access at: **http://localhost:7860**
 
 ## Demo
+
+![T2F Demo Interface](images/demo.png)

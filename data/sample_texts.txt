@@ -1,10 +1,50 @@
-A young woman with long blonde hair and blue eyes, smiling
-A middle-aged man with short brown hair and a beard
-A person with curly red hair and freckles
-A smiling woman with dark hair and glasses
-Young attractive woman with wavy black hair, wearing earrings and lipstick
-Man with 5 o'clock shadow, straight black hair, and bushy eyebrows
-Woman with high cheekbones, pointy nose, and heavy makeup
-Elderly man with gray hair and mustache
-Attractive young woman with brown hair, arched eyebrows, and rosy cheeks
-Man with oval face, narrow eyes, and wearing necktie
+The man sports a 5 o'clock shadow and mustache. He has pointy nose and a slightly open mouth.
+The woman has high cheekbones. Her hair is blond in colour. She has big lips with arched eyebrows. The young attractive woman has heavy makeup. She's wearing a necklace and lipstick.
+The woman has oval face. She has straight hair which is brown in colour with bangs. She has arched eyebrows and a slightly open mouth. The young attractive woman is smiling. She's wearing lipstick.
+The woman has high cheekbones. She has wavy hair. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing a necklace and lipstick.
+The woman has a receding hairline. She has pointy nose with arched eyebrows. The woman looks young and attractive. She's wearing lipstick.
+The woman has big nose with arched eyebrows. The woman has heavy makeup. She's wearing earrings and lipstick.
+The woman has high cheekbones. Her hair is blond in colour. She has big lips and pointy nose with arched eyebrows and a slightly open mouth. The smiling, woman has heavy makeup. She's wearing earrings, necklace and lipstick.
+The woman has high cheekbones. Her hair is brown in colour. She has a slightly open mouth. The young woman has heavy makeup.
+The woman has wavy hair which is blond in colour. She has big lips and pointy nose and a slightly open mouth. The woman looks young and attractive. She's wearing earrings, necklace and lipstick.
+The man is bald. He has big lips and big nose. The man looks young.
+The woman has oval face and high cheekbones. She has wavy hair which is blond in colour. She has arched eyebrows and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing lipstick.
+The man sports a 5 o'clock shadow, goatee and mustache with sideburns. He has big nose. The man looks young.
+The woman has oval face and high cheekbones. She has wavy hair which is blond in colour. The young attractive woman is smiling. She's wearing lipstick.
+The woman has straight hair which is blond in colour. She has a slightly open mouth. The woman looks young.
+The woman has oval face and high cheekbones. She has wavy hair which is blond in colour with bangs. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing earrings, necklace and lipstick.
+The woman has oval face and high cheekbones. Her hair is brown in colour with bangs. She has pointy nose and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing a necklace and lipstick.
+The woman has oval face and high cheekbones. She has a receding hairline. She has a slightly open mouth. The young woman is smiling.
+The woman has oval face. She has wavy hair with bangs. She has pointy nose, narrow eyes and a slightly open mouth. The young attractive woman has heavy makeup. She's wearing lipstick.
+The woman has high cheekbones. She has wavy hair which is brown in colour. She has big pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing a necklace and lipstick.
+The woman has oval face and high cheekbones. Her hair is black in colour. She has big nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing earrings, necklace and lipstick.
+The man's hair is black in colour. He has a slightly open mouth. The man is smiling. He's wearing necktie.
+The woman has oval face. Her hair is brown in colour. She has narrow eyes. The woman looks young and attractive. She's wearing a necklace and lipstick.
+The man has sideburns. He has straight hair which is black in colour. He has big nose. The man has rosy cheeks.
+The woman has straight hair which is brown in colour. The woman looks young.
+The woman has wavy hair which is blond in colour with bangs. She has pointy nose, narrow eyes. The woman has pale skin. She's wearing lipstick.
+The woman has wavy hair which is blond in colour. The young attractive woman has heavy makeup. She's wearing lipstick.
+The man sports a goatee. He has straight hair which is black in colour. He has bushy eyebrows and a slightly open mouth. The man looks young.
+The woman has wavy hair. She has big lips and narrow eyes with arched eyebrows and a slightly open mouth. The woman is smiling. She's wearing lipstick.
+The woman has oval face and high cheekbones. She has wavy hair with bangs. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing a necklace and lipstick.
+The woman's hair is brown in colour. She has pointy nose with arched eyebrows. The young attractive woman has heavy makeup. She's wearing a necklace and lipstick.
+The woman has oval face and high cheekbones. Her hair is brown in colour with bangs. She has big nose with arched eyebrows and a slightly open mouth. The smiling, attractive woman has heavy makeup. She's wearing earrings, necklace and lipstick.
+The woman has wavy hair with bangs. She has big lips and big nose, narrow eyes and a slightly open mouth. The woman is smiling. She's wearing earrings, necklace and lipstick.
+The woman has wavy hair. She has pointy nose, narrow eyes with arched eyebrows. The young attractive woman has heavy makeup. She's wearing lipstick.
+The woman has high cheekbones. Her hair is black in colour. She has big lips and pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing earrings and lipstick.
+The woman has high cheekbones. Her hair is black in colour with bangs. She has big lips and narrow eyes and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing lipstick.
+The woman has high cheekbones. She has wavy hair which is brown in colour. She has pointy nose with arched eyebrows. The smiling, young attractive woman has heavy makeup. She's wearing lipstick.
+The man's hair is brown in colour. He has pointy nose. The man looks young. He's wearing eyeglasses.
+The woman has big lips. The woman looks young and attractive. She's wearing lipstick.
+The woman has oval face. She has straight hair which is brown in colour. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has heavy makeup. She's wearing lipstick.
+The woman has high cheekbones. She has wavy hair which is blond in colour with bangs. She has pointy nose, narrow eyes and a slightly open mouth. The smiling, attractive woman has heavy makeup. She's wearing earrings, necklace and lipstick.
+The woman has straight hair which is blond in colour. She has pointy nose. The attractive woman has pale skin and heavy makeup. She's wearing a necklace and lipstick.
+The woman has high cheekbones. She has straight hair which is brown in colour. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, woman has rosy cheeks and heavy makeup. She's wearing lipstick.
+The woman has high cheekbones. Her hair is black in colour with bangs. She has big lips with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing earrings and lipstick.
+The woman has high cheekbones. Her hair is black in colour with bangs. She has pointy nose with arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing earrings and lipstick.
+The woman has oval face and high cheekbones. Her hair is black in colour. She has big pointy nose with bushy eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing a necklace and lipstick.
+The chubby man has high cheekbones. He sports a 5 o'clock shadow. He is bald. He has big lips and big nose and a slightly open mouth. The young man is smiling.
+The man has high cheekbones. He sports a goatee. His hair is brown in colour. The young man is smiling.
+The woman has wavy hair. She has a slightly open mouth. The woman is smiling. She's wearing earrings and lipstick.
+The man has straight hair which is black in colour. He has big nose. The man looks young.
+The woman has high cheekbones. She has wavy hair which is black in colour. She has big lips and pointy nose with bushy and arched eyebrows and a slightly open mouth. The smiling, young attractive woman has rosy cheeks and heavy makeup. She's wearing earrings and lipstick.

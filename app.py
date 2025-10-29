@@ -8,6 +8,8 @@ import time
 
 from src.face_detector import FaceDescriptionDetector
 from src.text_formatter import TextFormatter
+from src.language_detector import LanguageDetector
+from src.translator import VietnameseTranslator
 from src.model_inference import T2FInference
 
 
@@ -32,6 +34,8 @@ print(f"Using device: {DEVICE}")
 # Initialize components
 detector = FaceDescriptionDetector()
 formatter = TextFormatter()
+language_detector = LanguageDetector()
+translator = VietnameseTranslator()
 model = None
 
 # Load sample texts
@@ -69,22 +73,63 @@ def generate_face(user_input: str, use_text_rewrite: bool = True):
     
     start_time = time.time()
     
-    # Validate input
-    is_face, detection_msg = detector.is_face_description(user_input)
+    # Translation info display
+    translation_info = ""
+    text_to_validate = user_input
+    
+    # Detect language and translate if needed (BEFORE validation)
+    # Auto-translate is always enabled
+    try:
+        detected_language = language_detector.get_language(user_input)
+        
+        # Check if language is supported
+        if detected_language == "other":
+            error_msg = "⚠️ Language not supported!\n\nPlease enter your description in:\n• English 🇬🇧\n• Vietnamese 🇻🇳"
+            return None, error_msg, ""
+        
+        if detected_language == "vi":
+            translation_info = f"🌏 Language: Tiếng Việt\n"
+            try:
+                translated_text = translator.translate(user_input)
+                text_to_validate = translated_text
+                translation_info += f"🔄 Translated to: {translated_text}\n"
+            except Exception as e:
+                translation_info += f"⚠️ Translation failed: {str(e)}\n"
+        else:  # "en"
+            translation_info = f"🌏 Language: English\n"
+    except Exception as e:
+        # If language detection fails, continue with original text
+        text_to_validate = user_input
+    
+    # Validate input (using translated text if Vietnamese)
+    is_face, detection_msg = detector.is_face_description(text_to_validate)
     if not is_face:
-        suggestions = detector.get_suggestions(user_input)
+        suggestions = detector.get_suggestions(text_to_validate)
         suggestion_text = "\n\n💡 Try adding:\n" + "\n".join(f"  • {s}" for s in suggestions)
         return None, detection_msg + suggestion_text, ""
     
     # Format text with GROQ API if enabled
     if use_text_rewrite:
         try:
-            formatted_text = formatter.format_text(user_input)
+            # Use the already translated text if available
+            formatted_text, lang_info = formatter.format_text(user_input, auto_translate=True)
+            
+            # Update translation info if not already set
+            if not translation_info:
+                if lang_info['original_language'] == 'vi':
+                    translation_info = f"🌏 Language: {lang_info['language_name']}\n"
+                    if lang_info['was_translated']:
+                        translation_info += f"🔄 Translated to: {lang_info['translated_text']}\n"
+                    elif 'translation_error' in lang_info:
+                        translation_info += f"⚠️ Translation failed, using original text\n"
+                else:
+                    translation_info = f"🌏 Language: {lang_info['language_name']}\n"
+                
         except Exception as e:
-            formatted_text = user_input
+            formatted_text = text_to_validate
             detection_msg += f"\n⚠️ GROQ API unavailable, using original text"
     else:
-        formatted_text = user_input
+        formatted_text = text_to_validate
     
     # Remove pipe | and format for display
     formatted_display = formatted_text.replace("|", "\n")
@@ -155,6 +200,8 @@ def create_demo(theme_mode="soft"):
                 gr.Markdown("""
                 # 🎨 Text-to-Face Generation
                 Generate realistic 1024×1024 face images from text descriptions.
+                
+                **Supports Vietnamese 🇻🇳 and English 🇬🇧 input** - Automatic translation included!
                 """)
             with gr.Column(scale=1, elem_classes="theme-toggle"):
                 theme_btn = gr.Button(
@@ -169,8 +216,8 @@ def create_demo(theme_mode="soft"):
             # Left: Input
             with gr.Column(scale=1):
                 user_input = gr.Textbox(
-                    label="Face Description",
-                    placeholder="e.g., Young woman with wavy blonde hair and blue eyes",
+                    label="Face Description (Vietnamese or English)",
+                    placeholder="e.g., Young woman with wavy blonde hair and blue eyes\nhoặc: Một cô gái trẻ với mái tóc dài màu vàng",
                     lines=4,
                 )
                 
@@ -180,9 +227,16 @@ def create_demo(theme_mode="soft"):
                     value=None,
                 )
                 
+                formatted_text_box = gr.Textbox(
+                    label="Formatted Text (Model Input)",
+                    lines=4,
+                    interactive=False,
+                    elem_classes="formatted-text",
+                )
+                
                 with gr.Row():
                     use_rewrite = gr.Checkbox(
-                        label="AI Text Rewrite",
+                        label="AI Text Rewrite (based on training text)",
                         value=True,
                         info="Use GROQ API to format text"
                     )
@@ -195,6 +249,7 @@ def create_demo(theme_mode="soft"):
                     label="Generated Face",
                     type="pil",
                     height=512,
+                    format="png",
                 )
                 
                 status_box = gr.Textbox(
@@ -202,14 +257,6 @@ def create_demo(theme_mode="soft"):
                     lines=2,
                     interactive=False,
                 )
-                
-                with gr.Accordion("Formatted Text (Model Input)", open=False):
-                    formatted_text_box = gr.Textbox(
-                        lines=4,
-                        interactive=False,
-                        elem_classes="formatted-text",
-                        show_label=False,
-                    )
         
         # Footer with metrics explanation
         with gr.Accordion("ℹ️ About Metrics", open=False):
