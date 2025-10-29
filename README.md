@@ -2,6 +2,8 @@
 
 Generate face images from text descriptions using BERT + StyleGAN2.
 
+Training repo: https://github.com/thangthewinner/t2f_training 
+
 ## Requirements
 
 - Python 3.12.9
