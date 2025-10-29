@@ -36,7 +36,6 @@ stylegan2-ada-pytorch/
 
 # Outputs
 outputs/
-*.png
 *.jpg
 *.jpeg
 
