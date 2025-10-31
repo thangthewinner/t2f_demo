@@ -133,6 +133,7 @@ def generate_face(user_input: str, use_text_rewrite: bool = True):
     
     # # Remove pipe | and format for display
     # formatted_display = formatted_text.replace("|", "\n")
+    formatted_display = formatted_text
     
     # Generate image
     try:
