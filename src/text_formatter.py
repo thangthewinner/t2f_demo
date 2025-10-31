@@ -104,17 +104,16 @@ class TextFormatter:
 
 **IMPORTANT RULES:**
 1. Start with "The woman..." or "The man..." based on gender
-2. Use pipe (|) to separate sentences
-3. Follow these patterns:
+2. Follow these patterns:
    - "The woman/man has [feature]"
    - "She/He has [feature]"
    - "The [age] [appearance] woman/man..."
    - "She's/He's wearing [accessory]"
-4. ONLY use features from this vocabulary list:
+3. ONLY use features from this vocabulary list:
 {self.features_text}
 
-5. When writing features, do NOT use underscores (e.g., write "5 o'clock shadow" not "5_o'clock_shadow")
-6. Common sentence structures:
+4. When writing features, do NOT use underscores (e.g., write "5 o'clock shadow" not "5_o'clock_shadow")
+5. Common sentence structures:
    - "The woman has high cheekbones."
    - "She has wavy hair which is brown in colour."
    - "She has big lips and pointy nose with arched eyebrows and a slightly open mouth."
@@ -124,13 +123,13 @@ class TextFormatter:
 **EXAMPLE CONVERSIONS:**
 
 Input: "A young woman with long blonde hair and blue eyes, smiling"
-Output: The woman has straight hair which is blond in colour.|She has blue eyes.|The smiling, young attractive woman has heavy makeup.
+Output: The woman has straight hair which is blond in colour. She has blue eyes. The smiling, young attractive woman has heavy makeup.
 
 Input: "Man with beard and short brown hair"
-Output: The man has straight hair which is brown in colour.|He sports a goatee.|The man looks young.
+Output: The man has straight hair which is brown in colour. He sports a goatee. The man looks young.
 
 Input: "Attractive young woman with wavy black hair, wearing earrings and lipstick"
-Output: The woman has wavy hair which is black in colour.|The young attractive woman has heavy makeup.|She's wearing earrings and lipstick.
+Output: The woman has wavy hair which is black in colour. The young attractive woman has heavy makeup. She's wearing earrings and lipstick.
 
 **NOW CONVERT THIS:**
 Input: {user_input}

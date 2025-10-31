@@ -131,8 +131,8 @@ def generate_face(user_input: str, use_text_rewrite: bool = True):
     else:
         formatted_text = text_to_validate
     
-    # Remove pipe | and format for display
-    formatted_display = formatted_text.replace("|", "\n")
+    # # Remove pipe | and format for display
+    # formatted_display = formatted_text.replace("|", "\n")
     
     # Generate image
     try:
