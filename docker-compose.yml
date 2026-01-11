@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  # CPU version (default) - Works everywhere, no special requirements
+  t2f-cpu:
+    build:
+      context: .
+      dockerfile: dockerfile
+      args:
+        TORCH_INDEX_URL: https://download.pytorch.org/whl/cpu
+    image: t2f-demo:cpu
+    container_name: t2f-demo-cpu
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./models:/app/models
+      - ./.env:/app/.env
+    restart: unless-stopped
+    profiles:
+      - cpu
+
+  # GPU version - Requires NVIDIA Container Toolkit
+  t2f-gpu:
+    build:
+      context: .
+      dockerfile: dockerfile
+      args:
+        TORCH_INDEX_URL: https://download.pytorch.org/whl/cu121
+    image: t2f-demo:gpu
+    container_name: t2f-demo-gpu
+    ports:
+      - "7860:7860"
+    volumes:
+      - ./models:/app/models
+      - ./.env:/app/.env
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    profiles:
+      - gpu
+
